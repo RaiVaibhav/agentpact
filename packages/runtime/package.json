@@ -1,0 +1,19 @@
+{
+  "name": "@agentpact/runtime",
+  "version": "0.1.0",
+  "description": "Sub-millisecond stateful runtime ledger and deterministic transaction firewall for AI agents",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "@agentpact/contract": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "typescript": "^5.8.3"
+  }
+}
+

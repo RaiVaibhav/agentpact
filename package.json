@@ -1,0 +1,19 @@
+{
+  "name": "agentpact-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AgentPact: The Sub-Millisecond Stateful Transaction & Guardrail Hypervisor for AI Agents",
+  "author": "AgentPact Contributors",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm --filter @agentpact/contract build && pnpm --filter @agentpact/runtime build && pnpm --filter @agentpact/compiler build",
+    "compile": "tsx packages/compiler/src/cli.ts",
+    "agentpact": "tsx packages/compiler/src/cli.ts",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "tsx": "^4.19.3",
+    "vitest": "^3.0.0"
+  }
+}

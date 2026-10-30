@@ -1,0 +1,15 @@
+{
+  "name": "example-express-refund-bot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "demo": "tsx demo.ts",
+    "compile": "agentpact --routes routes --tools mcp/tools.ts --prompt agent/prompt.md --out agentpact.contract.json"
+  },
+  "dependencies": {
+    "@agentpact/contract": "workspace:*",
+    "@agentpact/compiler": "workspace:*",
+    "@agentpact/runtime": "workspace:*"
+  }
+}
+
